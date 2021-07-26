@@ -42,7 +42,7 @@ export default function Dashboard() {
     reset,
     setValue,
     formState: { errors }
-  } = useForm();
+  } = useForm();  
 
   async function getTodos() {
     try {
@@ -81,7 +81,6 @@ export default function Dashboard() {
           }, {
             headers : {"Content-Type": "application/json"}
           });
-
 
           reset();  
           setTodo(undefined);
