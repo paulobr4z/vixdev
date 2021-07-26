@@ -82,7 +82,7 @@ export const NewTodo = styled.div<MenuProps>`
   background: ${props => props.theme.colors.background};
   opacity: ${({click}) => click ? '1' : '0'};
   visibility: ${({click}) => click ? 'visible' : 'hidden'};
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 
   .header-todo {
     display: flex;
