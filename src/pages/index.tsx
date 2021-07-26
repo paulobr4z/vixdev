@@ -27,7 +27,6 @@ export default function SignIn() {
           type="text" 
           placeholder="email"
           {...register("email", { required: true })}
-          defaultValue="paulobrazaraujo@gmail.com"
         />
         {errors.email && <p>Campo Obrigatório</p>}
         <input
