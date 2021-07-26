@@ -14,7 +14,7 @@ interface TodoGet {
   id: string
   title: string;
   description: string;
-  date: string;
+  createdAt: string;
   status: string
 }
 
@@ -68,6 +68,7 @@ export default function Dashboard() {
 
           reset();  
           setClick(!click);
+          getTodos();
         } catch (err) {
           console.log(err)
         }  
@@ -85,6 +86,7 @@ export default function Dashboard() {
           reset();  
           setTodo(undefined);
           setClick(!click);
+          getTodos();
         } catch (err) {
           console.log(err);
         }
@@ -93,7 +95,6 @@ export default function Dashboard() {
     
     reset();
     newTodo();
-    getTodos(); 
   }
 
   async function editTodo(todo: TodoGet) {
@@ -155,7 +156,7 @@ export default function Dashboard() {
                   <strong>{todo.title}</strong>
                 </p>
                 <p>{todo.description}</p>
-                <p>{todo.date}</p>
+                <p>{todo.createdAt}</p>
                 <div>
                   <p>{todo.status}</p>
                   <div>
