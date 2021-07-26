@@ -5,7 +5,8 @@ interface MenuProps {
 }
 
 export const Container = styled.div`
-  width: 100%;
+  min-width: 100%;
+  width: 100vh;
 `
 export const Header = styled.div`
   height: 80px;
@@ -29,6 +30,7 @@ export const Main = styled.div`
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  
 
   .title  {
     display: flex;
@@ -44,6 +46,7 @@ export const Main = styled.div`
       background: #202024;
       padding: 8px 8px 8px 18px;
       border-radius: 8px;
+      
     }
   }
 
@@ -78,7 +81,8 @@ export const NewTodo = styled.div<MenuProps>`
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 100vh;
+  min-width: 100%;
   background: ${props => props.theme.colors.background};
   opacity: ${({click}) => click ? '1' : '0'};
   visibility: ${({click}) => click ? 'visible' : 'hidden'};
