@@ -1,7 +1,8 @@
 #Vix.dev Challenge
 
-Link front-end [Link](https://vixdev.herokuapp.com/dashboard).
-Link repositorio do back-end [Link](https://vixdev.herokuapp.com/dashboard).
+[Link](https://vixdev.herokuapp.com/dashboard) front-end.
+
+[Link](https://github.com/paulobr4z/vixdevback) repositorio do back-end.
 
 Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
 
